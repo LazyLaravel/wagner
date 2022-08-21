@@ -1,0 +1,12 @@
+{
+    "name": "lazy-laravel/wagner",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Birtan Taskin",
+            "email": "taskinbirtan@gmail.com"
+        }
+    ],
+    "require": {}
+}

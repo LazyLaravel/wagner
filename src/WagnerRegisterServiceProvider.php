@@ -3,6 +3,7 @@
 namespace LazyLaravel\Wagner;
 
 use Illuminate\Support\ServiceProvider;
+use Wagner\Contracts\ProductContracts;
 
 class WagnerRegisterServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,11 @@ class WagnerRegisterServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(ProductContracts::class, function () {
+            return function () {
+                echo "wagner says hello";
+            };
+        });
     }
 
     /**
@@ -26,5 +31,7 @@ class WagnerRegisterServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '\migrations\\' => database_path('migrations')
         ], 'migrations');
+        $this->loadRoutesFrom(__DIR__ . '/routes/wagner.php');
+        $this->mergeConfigFrom(__DIR__ . '/config/wagner.php', 'wagner');
     }
 }

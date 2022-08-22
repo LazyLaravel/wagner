@@ -8,5 +8,19 @@
             "email": "taskinbirtan@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "LazyLaravel\\Wagner\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LazyLaravel\\Wagner\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "7.0",
+        "nunomaduro/collision": "^6.2"
+    }
 }

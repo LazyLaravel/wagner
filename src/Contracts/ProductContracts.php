@@ -1,6 +1,6 @@
 <?php
 
-namespace Wagner\Contracts;
+namespace LazyLaravel\Wagner\Contracts;
 
 interface ProductContracts
 {

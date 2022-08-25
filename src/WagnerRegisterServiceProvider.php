@@ -3,7 +3,7 @@
 namespace LazyLaravel\Wagner;
 
 use Illuminate\Support\ServiceProvider;
-use Wagner\Contracts\ProductContracts;
+use LazyLaravel\Wagner\Contracts\ProductContracts;
 
 class WagnerRegisterServiceProvider extends ServiceProvider
 {

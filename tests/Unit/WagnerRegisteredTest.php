@@ -3,7 +3,7 @@
 namespace LazyLaravel\Wagner\Tests\Unit;
 
 use LazyLaravel\Wagner\Tests\TestCase;
-use Wagner\Contracts\ProductContracts;
+use LazyLaravel\Wagner\Contracts\ProductContracts;
 
 class WagnerRegisteredTest extends TestCase
 {
